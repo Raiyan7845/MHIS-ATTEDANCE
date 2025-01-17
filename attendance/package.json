@@ -28,9 +28,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "frontend":"cd frontend && npm start",
-    "backend":"cd backend && node index.js",
-    "dev":"concurrently -n\"frontend,backend\" -c\"bgblue,bgyellow\"\"npm run frontend\"\"npm run backend\""
+    "client": "react-scripts start",
+    "server": "cd ../backend && node index.js",
+    "dev": "concurrently -n \"client,server\" -c \"bgBlue,bgYellow\" \"npm run client\" \"npm run server\""
   },
   "eslintConfig": {
     "extends": [
@@ -52,6 +52,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.12",
+    "concurrently": "^8.2.2",
     "postcss": "^8.4.17",
     "tailwindcss": "^3.1.8"
   },

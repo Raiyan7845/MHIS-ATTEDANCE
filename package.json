@@ -1,0 +1,28 @@
+{
+  "name": "college-attendance-management-system",
+  "version": "1.0.0",
+  "description": "College Attendance Management System with React frontend and Node.js backend",
+  "main": "index.js",
+  "scripts": {
+    "client-install": "cd attendance && npm install",
+    "server-install": "cd backend && npm install",
+    "install-all": "npm install && npm run client-install && npm run server-install",
+    "client": "cd attendance && npm start",
+    "server": "cd backend && node index.js",
+    "dev": "concurrently \"npm run client\" \"npm run server\"",
+    "build": "cd attendance && npm run build",
+    "start": "cd backend && node index.js"
+  },
+  "keywords": [
+    "attendance",
+    "management",
+    "college",
+    "react",
+    "nodejs"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
