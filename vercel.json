@@ -1,26 +1,12 @@
 {
-    "version": 2,
-    "builds": [
-      {
-        "src": "backend/index.js",
-        "use": "@vercel/node"
-      },
-      {
-        "src": "attendance/build/**",
-        "use": "@vercel/static"
-      }
-    ],
-    "routes": [
-      {
-        "src": "/api/(.*)",
-        "dest": "/backend/index.js"
-      },
-      {
-        "handle": "filesystem"
-      },
-      {
-        "src": "/(.*)",
-        "dest": "/attendance/build/index.html"
-      }
-    ]
-  }
+  "version": 2,
+  "builds": [
+    {
+      "src": "backend/api/**/*.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    { "src": "/api/(.*)", "dest": "backend/api/$1" }
+  ]
+}

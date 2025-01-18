@@ -56,3 +56,4 @@ web-build/
 *.lock
 *.bak
 *.orig
+.vercel
