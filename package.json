@@ -10,16 +10,11 @@
     "client": "cd attendance && npm start",
     "server": "cd backend && node index.js",
     "dev": "concurrently \"npm run client\" \"npm run server\"",
-    "build": "cd attendance && npm run build",
+    "vercel-build": "cd attendance && npm install --legacy-peer-deps && CI=false npm run build",
+    "build": "cd attendance && npm install --legacy-peer-deps && CI=false npm run build",
     "start": "cd backend && node index.js"
   },
-  "keywords": [
-    "attendance",
-    "management",
-    "college",
-    "react",
-    "nodejs"
-  ],
+  "keywords": ["attendance", "management", "college", "react", "nodejs"],
   "author": "",
   "license": "ISC",
   "devDependencies": {

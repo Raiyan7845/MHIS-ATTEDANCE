@@ -269,8 +269,8 @@ const SignupStudent = () => {
                                                     Password
                                                 </label>
                                                 <input
-                                                    class="w-full px-3 py-2 mb-3 text-sm leading-tight text-gray-700 border border-red-500 rounded shadow appearance-none focus:outline-none focus:shadow-outline"
-                                                    id="password"
+                                                  class="w-full px-3 py-2 mb-3 text-sm leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
+                                                  id="password"
                                                     type="password"
                                                     name='pwd'
                                                     onChange={(e) => {
@@ -279,7 +279,7 @@ const SignupStudent = () => {
                                                     required
                                                     placeholder="password"
                                                 />
-                                                <p class="text-xs italic text-red-500">Please choose a password.</p>
+                                                {/* <p class="text-xs italic text-red-500">Please choose a password.</p> */}
                                             </div>
                                             <div class="md:ml-2 w-1/2">
                                                 <label class="block mb-2 text-sm font-bold text-gray-700 flex justify-start" for="c_password">
@@ -308,7 +308,7 @@ const SignupStudent = () => {
                                             </button>
                                         </div>
                                         <hr class="mb-6 border-t" />
-                                        <div class="text-center">
+                                        {/* <div class="text-center">
                                             <a
                                                 class="inline-block text-sm text-blue-500 align-baseline hover:text-blue-800"
                                                 href="#"
@@ -323,7 +323,7 @@ const SignupStudent = () => {
                                             >
                                                 Already have an account? Login!
                                             </a>
-                                        </div>
+                                        </div> */}
                                     </form>
                                 </div>
                             </div>

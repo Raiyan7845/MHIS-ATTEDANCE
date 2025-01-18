@@ -133,19 +133,24 @@ const Admin = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col justify-center items-center">
-          <h2>
-            Add Faculty{" "}
-            <Link href="/registerTeacher" className="text-blue-500">
-              Register Now
+        <div className="flex gap-3 justify-center items-center">
+          <Link to="/registerTeacher" className="text-white">
+          <button
+            class=" px-4 py-2 font-bold text-white bg-blue-500 rounded-full hover:bg-blue-700 focus:outline-none focus:shadow-outline"
+            type="button"
+          >
+              Add Faculty
+          </button>
             </Link>
-          </h2>
-          <h2>
+          <Link to="/registerStudent" className="text-white">
+          <button
+            class=" px-4 py-2 font-bold text-white bg-blue-500 rounded-full hover:bg-blue-700 focus:outline-none focus:shadow-outline"
+            type="button"
+          >
             Add a Student{" "}
-            <Link href="/registerStudent" className="text-blue-500">
-              Register Now
+          </button>
             </Link>
-          </h2>
+         
         </div>
       </section>
     </div>

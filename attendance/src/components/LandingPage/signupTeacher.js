@@ -18,7 +18,7 @@ const SignupTeacher = () => {
     const [pwd, setpwd] = useState("");
     const [cpwd, setcpwd] = useState("");
     const navigate= useNavigate();
-    const Dept = [['CS', 'Computer Science & Engineering'],['COM', 'Commerce']];
+    const Dept = [['CS', 'Computer Science'],['COM', 'Commerce']];
 
     console.log("body : ", name, dept, email, pwd, cpwd);
     const handleSubmit = () => {
@@ -88,7 +88,7 @@ const SignupTeacher = () => {
                                     <h3 class="pt-4 text-2xl text-center">Create an Account!</h3>
                                     <form class="px-8 pt-6 pb-8 mb-4 bg-white rounded">
                                         <div class="mb-4 md:flex md:justify-between">
-                                            <div class="mb-4 md:mr-2 md:mb-0 w-1/2">
+                                            <div class=" md:mr-2 md:mb-0 w-1/2">
                                                 <label class="block mb-2 text-sm font-bold text-gray-700 flex justify-start" for="lastName">
                                                     Name
                                                 </label>
@@ -105,7 +105,7 @@ const SignupTeacher = () => {
                                                     placeholder="Name"
                                                 />
                                             </div>
-                                            <div class="mb-4 w-1/2 ml-2">
+                                            <div class=" md:mr-2 md:mb-0 w-1/2">
                                                 <label class="block mb-2 text-sm font-bold flex justify-start text-gray-700" for="email">
                                                     Email
                                                 </label>
@@ -167,7 +167,7 @@ const SignupTeacher = () => {
                                                     Password
                                                 </label>
                                                 <input
-                                                    class="w-full px-3 py-2 mb-3 text-sm leading-tight text-gray-700 border border-red-500 rounded shadow appearance-none focus:outline-none focus:shadow-outline"
+                                                    class="w-full px-3 py-2 mb-3 text-sm leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
                                                     id="password"
                                                     type="password"
                                                     name='pwd'
@@ -177,7 +177,6 @@ const SignupTeacher = () => {
                                                     required
                                                     placeholder="password"
                                                 />
-                                                <p class="text-xs italic text-red-500">Please choose a password.</p>
                                             </div>
                                             <div class="md:ml-2 w-1/2">
                                                 <label class="block mb-2 text-sm font-bold text-gray-700 flex justify-start" for="c_password">
@@ -206,7 +205,7 @@ const SignupTeacher = () => {
                                             </button>
                                         </div>
                                         <hr class="mb-6 border-t" />
-                                        <div class="text-center">
+                                        {/* <div class="text-center">
                                             <a
                                                 class="inline-block text-sm text-blue-500 align-baseline hover:text-blue-800"
                                                 href="#"
@@ -221,7 +220,7 @@ const SignupTeacher = () => {
                                             >
                                                 Already have an account? Login!
                                             </a>
-                                        </div>
+                                        </div> */}
                                     </form>
                                 </div>
                             </div>

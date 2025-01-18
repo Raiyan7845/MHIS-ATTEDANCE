@@ -64,15 +64,20 @@ const AdminLogin = () => {
                 pauseOnFocusLoss
                 draggable
                 pauseOnHover />
-            <div className="flex min-h-full items-center justify-center py-12 px-4 sm:px-6 lg:px-8 mt-[0%] px-[5%]">
-                <div className="w-full max-w-md space-y-8">
+            <div className="flex min-h-full items-center justify-center py-12 px-4 sm:px-6 lg:px-8 mt-[0%] px-[5%]" style={{  
+        backgroundImage: "url(" + "https://meritscollege.in/wp-content/uploads/slider/cache/7d72637259f321b6cd5856282505cfe1/WhatsApp-Image-2023-12-21-at-9.12.53-PM.jpg" + ")",
+        backgroundPosition: 'center',
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat'
+      }}>
+                <div className="w-full max-w-md space-y-8 bg-white p-7 rounded-md">
                     <div>
                         <img
-                            className="mx-auto h-12 w-auto"
-                            src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                           className="mx-auto h-16 w-auto"
+                              src="/MHISS-logo-bg.png"
                             alt="Your Company"
                         />
-                        <h2 className="mt-6 text-center text-3xl font-bold tracking-tight text-gray-900">
+                        <h2 className="mt-2 text-center text-3xl font-bold tracking-tight text-gray-900">
                             Log In
                         </h2>
                     </div>
